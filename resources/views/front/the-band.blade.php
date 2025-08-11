@@ -5,11 +5,13 @@
 
 
 
-
     <section class="inner-banner">
-        <img src="{{asset('assets/images/innerbg1.jpg')}}" class="w-100" alt="img">
+        <img src="{{asset('assets/images/latest3.webp')}}"
+             class="w-100"
+             alt="img"
+             style="height:300px; object-fit:cover; width:100%;">
         <div class="container">
-            <h2>The Band</h2>
+            <h2>ABOUT US</h2>
         </div>
     </section>
 
@@ -21,21 +23,16 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <figure class="bandpg-img">
-                        <img src="{{asset('assets/images/bandpg1.jpg')}}" class="img-fluid" alt="img">
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Go to Album</p>
-                        </a>
+                        <img src="{{asset('assets/images/latest6.webp')}}" class="img-fluid" alt="img">
+
                     </figure>
                 </div>
                 <div class="col-md-5">
                     <div class="bandpg-content pl-5">
-                        <h2>Noomi Dummy</h2>
-                        <p>The Vocalist is the fierce frontman of Lordz of Steel, unleashing thunderous screams and
-                            spine-tingling melodies that ignite the spirit of heavy metal. His commanding presence and
-                            electrifying energy forge an unbreakable bond with the audience, turning every performance
-                            into an unforgettable battle cry. With every lyric, he channels the raw emotion of the
-                            genre, leaving fans breathless.</p>
+                        <h2>Our Journey</h2>
+                        <p>Our journey began with a simple mission — to bring precision to life through custom dies and tooling. What started as a
+                            small-scale workshop with manual machines has grown into a trusted name in the die-making industry.
+                            In our early years, each die was hand-crafted with intense dedication, often requiring days of meticulous shaping and testing.</p>
                         <ul class="soical-band">
                             <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -50,20 +47,16 @@
             <div class="row align-items-center flex-row-reverse">
                 <div class="col-md-7">
                     <figure class="bandpg-img right-img">
-                        <img src="{{asset('assets/images/bandpg2.jpg')}}" class="img-fluid" alt="img">
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Go to Album</p>
-                        </a>
+                        <img src="{{asset('assets/images/latest5.webp')}}" class="img-fluid" alt="img">
+
                     </figure>
                 </div>
                 <div class="col-md-5">
                     <div class="bandpg-content pr-5">
-                        <h2>Gary McCoy</h2>
-                        <p>The Guitarist is an epic shredder, wielding his axe like a weapon of mass destruction. With
-                            blistering solos and bone-crushing riffs, he captivates fans and embodies the true essence
-                            of heavy metal and Rock Music. He crafts anthems that celebrate power and rebellion. His
-                            innovative playing pushes boundaries, inspiring a new generation of metalheads.</p>
+                        <h2>Our Expertise</h2>
+                        <p>From concept to completion, we specialize in creating high-quality dies that meet the strictest industry standards.
+                            Whether it’s progressive dies, stamping dies, mold dies, or custom tooling, we deliver solutions
+                            tailored to your exact requirements. Our advanced technology and skilled workmanship ensure durability, precision, and cost-effectiveness.</p>
                         <ul class="soical-band">
                             <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -78,17 +71,20 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <figure class="bandpg-img">
-                        <img src="{{asset('assets/images/bandpg1.jpg')}}" class="img-fluid" alt="img">
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Go to Album</p>
-                        </a>
+                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid" alt="img">
+
                     </figure>
                 </div>
                 <div class="col-md-5">
                     <div class="bandpg-content pl-5">
-                        <h2>Bobby "Six" Phillips</h2>
-                        <p>With a passion for rock and metal, Bobby has made a name for himself as the second lead guitarist for the band "Lordz Of Seel." His skillful guitar work complements the band's powerful sound, contributing to their signature blend of heavy riffs and melodic solos.</p>
+                        <h2>Why Choose Us</h2>
+                        <p>
+                            <strong>Quality Assurance:</strong> Every die we produce goes through rigorous testing to guarantee performance.<br>
+                            <strong>Custom Solutions:</strong> We design and build dies according to your specific needs.<br>
+                            <strong>On-Time Delivery:</strong> We value your time and always deliver as promised.<br>
+                            <strong>Competitive Pricing:</strong> Premium quality at fair and transparent rates.
+                        </p>
+
                         <ul class="soical-band">
                             <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -103,20 +99,15 @@
             <div class="row align-items-center flex-row-reverse">
                 <div class="col-md-7">
                     <figure class="bandpg-img">
-                        <img src="{{asset('assets/images/bandpg3.jpg')}}" class="img-fluid" alt="img">
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Go to Album</p>
-                        </a>
+                        <img src="{{asset('assets/images/videoslider2.webp')}}" class="img-fluid" alt="img">
+
                     </figure>
                 </div>
                 <div class="col-md-5">
                     <div class="bandpg-content pl-5">
-                        <h2>Jessica Lewis</h2>
-                        <p>The Bassist delivers thunderous grooves that resonate deep within the core of every listener.
-                            His pulsating rhythms create a sonic battlefield, uniting fans in euphoria while summoning
-                            the relentless spirit of heavy metal with every thundering note. He lays down the foundation
-                            that fuels the band's explosive sound, igniting a primal energy in the crowd.</p>
+                        <h2>Our Mission</h2>
+                        <p>Over time, we embraced technological advancements — transitioning from traditional hand-drawn sketches to advanced CAD/CAM design and CNC
+                            precision machining. But through all the innovation, one thing never changed: our commitment to craftsmanship.</p>
                         <ul class="soical-band">
                             <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
@@ -131,17 +122,15 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <figure class="bandpg-img right-img">
-                        <img src="{{asset('assets/images/bandpg4.jpg')}}" class="img-fluid" alt="img">
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Go to Album</p>
-                        </a>
+                        <img src="{{asset('assets/images/videoslider4.webp')}}" class="img-fluid" alt="img">
+
                     </figure>
                 </div>
                 <div class="col-md-5">
                     <div class="bandpg-content pr-5">
-                        <h2>Max "Thunder" Ramirez</h2>
-                        <p>Max is the heartbeat of Lordz Of Steel, pounding out explosive beats that propel the band into a sound frenzy. Each drum strike is a battle cry, invoking the raw power of Rock Music and ensuring that every show is a thrilling experience. His precision and ferocity elevate the music to new heights, driving the band and the audience into a frenzy.</p>
+                        <h2>Our Commitment</h2>
+                        <p>At the heart of our operations is a passion for perfection. We continuously invest in advanced machinery, innovative techniques,
+                            and skilled training to ensure that our customers always receive the highest standard of die-making services.</p>
                         <ul class="soical-band">
                             <li><a href="#"><i class="fab fa-spotify"></i></a></li>
                             <li><a href="#"><i class="fab fa-youtube"></i></a></li>

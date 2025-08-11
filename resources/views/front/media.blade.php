@@ -6,11 +6,15 @@
 
 
     <section class="inner-banner">
-        <img src="{{asset('assets/images/innerbg4.jpg')}}" class="w-100" alt="img">
+        <img src="{{asset('assets/images/artist3.webp')}}"
+             class="w-100"
+             alt="img"
+             style="height:300px; object-fit:cover; width:100%;">
         <div class="container">
-            <h2>Media</h2>
+            <h2>GALLERY</h2>
         </div>
     </section>
+
 
 
 

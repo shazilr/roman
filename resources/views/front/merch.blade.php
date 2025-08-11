@@ -6,12 +6,14 @@
 
 
     <section class="inner-banner">
-        <img src="{{asset('assets/images/innerbg5.jpg')}}" class="w-100" alt="img">
+        <img src="{{asset('assets/images/videoslider2.webp')}}"
+             class="w-100"
+             alt="img"
+             style="height:300px; object-fit:cover; width:100%;">
         <div class="container">
-            <h2>MERCH</h2>
+            <h2>PRODUCT DETAIL</h2>
         </div>
     </section>
-
 
 
     <section class="merch-section merch-page">

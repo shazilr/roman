@@ -2,13 +2,15 @@
 @section('content')
 
 
-    <section class="inner-banner dtlpg-baner">
-        <img src="{{asset('assets/images/innerbg2.jpg')}}" class="w-100" alt="img">
+    <section class="inner-banner">
+        <img src="{{asset('assets/images/detail.jpg')}}"
+             class="w-100"
+             alt="img"
+             style="height:300px; object-fit:cover; width:100%;">
         <div class="container">
-            <h2>Product Detail</h2>
+            <h2>DETAIL</h2>
         </div>
     </section>
-
 
 
 
@@ -135,7 +137,7 @@
                         </figure>
                         <div class="content-wraper">
                             <div class="d-flex align-items-center">
-                                <h3>Anny Smith</h3>
+                                <h3>Tahir Rasheed</h3>
                                 <span><i class="fas fa-calendar-alt"></i> 04-08-2022</span>
                             </div>
                             <div class="star-review">
@@ -145,9 +147,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>I’ve worked with many die makers in the past, but none have been as reliable as this team.
+                                My custom dies were completed on time, and the fit and finish were perfect. I’ll definitely be returning for future projects.</p>
                         </div>
                     </div>
                     <hr>
@@ -157,7 +158,7 @@
                         </figure>
                         <div class="content-wraper">
                             <div class="d-flex align-items-center">
-                                <h3>Anny Smith</h3>
+                                <h3>Mian Zulfiqar</h3>
                                 <span><i class="fas fa-calendar-alt"></i> 04-08-2022</span>
                             </div>
                             <div class="star-review">
@@ -167,9 +168,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>"What I appreciated most was their clear communication and willingness to answer my questions. They walked me through every
+                                step of the die-making process and ensured the final product met my needs. Fantastic experience!.</p>
                         </div>
                     </div>
                     <hr>
@@ -179,7 +179,7 @@
                         </figure>
                         <div class="content-wraper">
                             <div class="d-flex align-items-center">
-                                <h3>Anny Smith</h3>
+                                <h3>Zaheer Ahmed</h3>
                                 <span><i class="fas fa-calendar-alt"></i> 04-08-2022</span>
                             </div>
                             <div class="star-review">
@@ -189,9 +189,8 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>I ordered a custom rubber die and was blown away by the result. Not only was it delivered
+                                earlier than promised, but the durability and accuracy exceeded my expectations. Exceptional work</p>
                         </div>
                     </div>
                     <hr>

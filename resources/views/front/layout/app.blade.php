@@ -38,37 +38,34 @@
             <div class="an-navbar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg p-0">
-                        <a class="navbar-brand" href="{{route('home.front')}}">
-                            <img src="{{asset('assets/images/logo.webp')}}" alt="img">
+                        <a class="navbar-brand" href="{{route('home.front')}}" style="display:flex; align-items:center;">
+                            <img src="{{asset('assets/images/logos.png')}}"
+                                 alt="Logo"
+                                 style="max-height:60px; height:auto; width:auto; object-fit:contain; display:block;">
                         </a>
+
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                                aria-expanded="false" aria-label="Toggle navigation"
+                                style="border-color:white;">
+                            <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255,255,255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="{{route('home.front')}}">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="{{route('home.front')}}">HOME<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('the-band.front')}}">THE BAND</a>
+                                    <a class="nav-link" href="{{route('the-band.front')}}">ABOUT</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#">MUSIC</a>
-                                    <ul>
-                                        <li><a href="{{route('music-store.front')}}">MUSIC STORE</a></li>
-                                        <li><a href="{{route('discography.front')}}">DISCOGRAPHY</a></li>
-                                    </ul>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="{{route('music-store.front')}}">SHOP</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('media.front')}}">MEDIA</a>
+                                    <a class="nav-link" href="{{route('media.front')}}">GALLERY</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{route('merch.front')}}">MERCH</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{route('fan-club.front')}}">FAN CLUB</a>
+                                    <a class="nav-link" href="{{route('merch.front')}}">PRODUCT DETAIL</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link search-icon" href="{{ route('cart.front') }}">
@@ -101,46 +98,43 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-11 text-center">
-                <img src="{{asset('assets/images/ftrlogo.webp')}}" class="img-fluid" alt="">
-                <ul class="navftr">
-                    <li><a href="">Home </a></li>
-                    <li><a href=""> About </a></li>
-                    <li><a href=""> Music </a></li>
-                    <li><a href=""> Merch</a></li>
-                    <li><a href=""> Tour Dates</a></li>
-                    <li><a href=""> Fan club </a></li>
-                    <li><a href=""> Blog </a></li>
-                    <li><a href=""> Contact</a></li>
-                </ul>
-                <ul class="navftr">
-                    <li><a href="tel:(330) 548-6928">(330) 548-6928</a></li>
-                    <li><a href="mailto:info@lordzofsteel.com">info@lordzofsteel.com</a></li>
-                </ul>
-                <ul class="ftrlinks">
+                <img src="{{asset('assets/images/logos.png')}}"
+                     alt="Logo"
+                     style="max-height:80px; width:auto; height:auto; object-fit:contain; display:block; margin:0 auto;">
 
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="far fa-cloud"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <ul class="navftr" style="list-style:none; padding:0; margin-top:15px;">
+                    <li style="display:inline-block; margin:0 10px;"><a href="">Home</a></li>
+                    <li style="display:inline-block; margin:0 10px;"><a href="">About</a></li>
+                    <li style="display:inline-block; margin:0 10px;"><a href="">Gallery</a></li>
+                    <li style="display:inline-block; margin:0 10px;"><a href="">Cart</a></li>
+                    <li style="display:inline-block; margin:0 10px;"><a href="">Shop</a></li>
+                    <li style="display:inline-block; margin:0 10px;"><a href="">Product Detail</a></li>
+                </ul>
+
+                <ul class="navftr" style="list-style:none; padding:0; margin-top:10px;">
+                    <li style="display:inline-block; margin:0 15px;"><a href="tel:(330) 548-6928">(330) 548-6928</a></li>
+                    <li style="display:inline-block; margin:0 15px;"><a href="mailto:info@lordzofsteel.com">info@lordzofsteel.com</a></li>
+                </ul>
+
+                <ul class="ftrlinks" style="list-style:none; padding:0; margin-top:10px;">
+                    <li style="display:inline-block; margin:0 8px;"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li style="display:inline-block; margin:0 8px;"><a href="#"><i class="far fa-cloud"></i></a></li>
+                    <li style="display:inline-block; margin:0 8px;"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li style="display:inline-block; margin:0 8px;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li style="display:inline-block; margin:0 8px;"><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
 
             </div>
         </div>
-        <div class="copyRight">
-            <div class="container">
-                <div class="cartWraps">
-                    <p>© 2024 lordzofsteel.com, All rights reserved</p>
-                    <ul>
-                        <li><a href="privacy.php">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="copyRight" style="margin-top:20px; text-align:center;">
+            <p style="margin:0;">© 2024 lordzofsteel.com, All rights reserved</p>
+            <ul style="list-style:none; padding:0; margin-top:5px;">
+                <li style="display:inline-block;"><a href="privacy.php">Privacy Policy</a></li>
+            </ul>
         </div>
     </div>
 
-</footer>
-<!-- END: Footer -->
+    <!-- END: Footer -->
 
 <div id="search">
     <button class="close" type="button">×</button>

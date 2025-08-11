@@ -1,10 +1,12 @@
 @extends('front.layout.app')
 @section('content')
-
-    <div class="preLoader black">
-        <img src="{{asset('assets/images/logos.png')}}" alt="img">
+    <div class="preLoader black"
+         style="display:flex;align-items:center;justify-content:center;height:100vh;width:100%;background:black;">
+        <img src="{{ asset('assets/images/logos.png') }}"
+             alt="img"
+             style="max-width:100%;height:auto;">
     </div>
-    <div class="preLoader white"></div>
+
 
     <div class="mouse-cursor cursor-outer"></div>
     <div class="mouse-cursor cursor-inner"></div>
@@ -13,7 +15,7 @@
         <div class="swiper-container homeSlider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slide-inner bg-image" data-background="{{asset('assets/images/slidebg.webp')}}">
+                    <div class="slide-inner bg-image" data-background="{{asset('assets/images/videoslider2.webp')}}">
                         <div class="container-fluid">
                             <a href="#" class="listen-box">
                                 <span><i class="far fa-arrow-up"></i></span>
@@ -51,7 +53,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="slide-inner bg-image" data-background="{{asset('assets/images/slidebg.webp')}}">
+                    <div class="slide-inner bg-image" data-background="{{asset('assets/images/latest5.webp')}}">
                         <div class="container-fluid">
                             <a href="#" class="listen-box">
                                 <span><i class="far fa-arrow-up"></i></span>
@@ -186,37 +188,34 @@
                                             <div><i class="fas fa-play"></i></div>
                                         </a>
                                     </figure>
-                                    <h2>After Dark Set</h2>
+                                    <h2>Rubber Mixing Mill </h2>
                                     <ul>
-                                        <li>#festival</li>
-                                        <li>August 12, 2022</li>
-                                        <li>August 24, 2022</li>
+                                        <li>for mixing raw rubber </li>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="video-content">
                                     <figure>
-                                        <img src="{{asset('assets/images/videoimg.webp')}}" class="img-fluid" alt="img">
+                                        <img src="{{asset('assets/images/12.jpg')}}" class="img-fluid" alt="img">
                                     </figure>
-                                    <h2>After Dark Set</h2>
+                                    <h2>Rubber Vulcanizing Press </h2>
                                     <ul>
-                                        <li>#festival</li>
-                                        <li>August 12, 2022</li>
-                                        <li>August 24, 2022</li>
+                                        <li>for curing rubber </li>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="video-content">
                                     <figure>
-                                        <img src="{{asset('assets/images/videoimg1.webp')}}" class="img-fluid" alt="img">
+                                        <img src="{{asset('assets/images/www.jpg')}}" class="img-fluid" alt="img">
                                     </figure>
-                                    <h2>Night Train Mix</h2>
+                                    <h2>CNC Milling Machine </h2>
                                     <ul>
-                                        <li>#festival</li>
-                                        <li>August 26, 2024</li>
-                                        <li>August 28, 2024</li>
+                                        <li> for machining die cavities.</li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -230,156 +229,119 @@
 
     <section class="latest-main">
         <div class="container">
-            <h2 class="latest-heading" data-aos="fade-up">Latest Releases</h2>
+            <h2 class="latest-heading" data-aos="fade-up">Newest Rubber Die Technologies</h2>
             <div class="row">
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest1.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Nella feat. Tommy</h2>
-                        <h3>Mattea Dega</h3>
-                        <ul>
-                            <li>#techno</li>
-                            <li>driving / peak time</li>
-                        </ul>
+                        <h2>Ultrafast Laser-Assisted Die Shaping</h2>
+
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest2.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Sunday Mix</h2>
-                        <h3>Mattea Dega</h3>
-                        <ul>
-                            <li>#techno</li>
-                            <li>driving / peak time</li>
-                        </ul>
+                        <h2>Guill Rotary Die with Enhanced Profile Control</h2>
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest3.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Hypnotic Society</h2>
-                        <h3>Mattea Dega</h3>
-                        <ul>
-                            <li>#techno</li>
-                            <li>driving / peak time</li>
-                        </ul>
+                        <h2>Advanced Polymer Blends with Smart Recovery</h2>
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Looking Beyond</h2>
-                        <h3>Oden & Fatzo & Baccus</h3>
-                        <ul>
-                            <li>#drum & bass</li>
-                            <li>clubing / warmup</li>
-                        </ul>
+                        <h2>Additive-Manufactured (3D-Printed) Die Inserts</h2>
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest5.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Psychedelic Mix</h2>
-                        <h3>Oden & Fatzo & Baccus</h3>
-                        <ul>
-                            <li>#drum & bass</li>
-                            <li>clubing / warmup</li>
-                        </ul>
+                        <h2> Self-Healing Rubber Die Coatings</h2>
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest6.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>Rare Footage Mix</h2>
-                        <h3>Mattea Dega</h3>
-                        <ul>
-                            <li>#techno</li>
-                            <li>driving / peak time</li>
-                        </ul>
+                        <h2>Embedded Sensors for Predictive Maintenance</h2>
+
+                    </div>
+                </div>
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="latest-card">
+                        <figure><img src="{{asset('assets/images/latest6.webp')}}" class="img-fluid" alt="img"></figure>
+                        <h2>Embedded Sensors for Predictive Maintenance</h2>
+
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
                         <figure><img src="{{asset('assets/images/latest7.webp')}}" class="img-fluid" alt="img"></figure>
-                        <h2>The Outer Space Mix</h2>
-                        <h3>Oden & Fatzo & Baccus</h3>
-                        <ul>
-                            <li>#drum & bass</li>
-                            <li>clubing / warmup</li>
-                        </ul>
+                        <h2>Ultrafast Laser-Assisted Die Shaping</h2>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="festival-main">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12" data-aos="fade-up">
-                    <div class="festival-card">
-                        <video id="scrollVideo" muted autoplay loop poster="{{asset('assets/poster-image.webp')}}">
-                            <source src="https://rawtracks.qodeinteractive.com/wp-content/uploads/label-home-video.mp4"
-                                    type="video/mp4">
-                        </video>
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>Dynamic Festival
-                                2024 Official</p>
-                        </a>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
     <section class="up-comming">
         <div class="container">
-            <h2 class="latest-heading" data-aos="fade-up">Explore Upcoming Tour <i class="far fa-arrow-up"></i></h2>
+            <h2 class="latest-heading" data-aos="fade-up">Completed Rubber Die Orders <i class="far fa-arrow-up"></i></h2>
             <div class="row align-items-center">
                 <div class="col-md-12" data-aos="fade-up">
+
                     <div class="upcommingwrap">
-                        <h2>20 <span>May</span></h2>
-                        <p>Wonderland Beats Festival <br>Graham Donovan</p>
-                        <h4>Miami <span>Florida</span></h4>
-                        <a href="">Buy Tickets <i class="far fa-arrow-up"></i> </a>
-                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid comngimg" alt="">
+                        <h2>May 2021</h2>
+                        <p>High-Precision Rubber Die</p>
+                        <h4>Pakistan <span>Fasilabad</span></h4>
+
                     </div>
+
                     <div class="upcommingwrap">
-                        <h2>23<span>apr</span></h2>
-                        <p>Dreamland Kingdom Fest<br>Mattea Dega</p>
-                        <h4>Paris <span>France</span></h4>
-                        <a href="">Sold Out <i class="far fa-arrow-up"></i> </a>
-                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid comngimg" alt="">
+                        <h2>Apr 2022</h2>
+                        <p>Custom Polymer Die Set</p>
+                        <h4>Pakistan  <span>Multan</span></h4>
+
                     </div>
+
                     <div class="upcommingwrap">
-                        <h2>09 <span>mar</span></h2>
-                        <p>Turbosounds Festival 2022 <br>Graham Donovan</p>
-                        <h4>Bern <span>Switzerland</span></h4>
-                        <a href="">Buy Tickets <i class="far fa-arrow-up"></i> </a>
-                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid comngimg" alt="">
+                        <h2>Mar 2020</h2>
+                        <p>Die Engineering Project</p>
+                        <h4>Pakistan  <span>Lahore</span></h4>
+
                     </div>
+
                     <div class="upcommingwrap">
-                        <h2>28 <span>aug</span></h2>
-                        <p>Cherry Blossom Fest 2022 <br>Mattea Dega</p>
-                        <h4>Okayama<span>Japan</span></h4>
-                        <a href="">Buy Tickets <i class="far fa-arrow-up"></i> </a>
-                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid comngimg" alt="">
+                        <h2>Aug 2024</h2>
+                        <p>Durable Rubber Die Coating</p>
+                        <h4>Pakistan  <span>Karachi</span></h4>
+
                     </div>
+
                     <div class="upcommingwrap">
-                        <h2>30 <span>jun</span></h2>
-                        <p>Music Heritage Festival ‘22 <br>Markus Weigelt</p>
-                        <h4>Brussels<span>Belgium</span></h4>
-                        <a href="">Free Entrance <i class="far fa-arrow-up"></i> </a>
-                        <img src="{{asset('assets/images/latest4.webp')}}" class="img-fluid comngimg" alt="">
+                        <h2> Jun 2023</h2>
+                        <p>3D-Printed Die Inserts </p>
+                        <h4>Pakistan  <span>Sheikh-u-pura</span></h4>
+
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <section class="videoimgSec">
@@ -412,134 +374,74 @@
     </section>
 
 
-    <section class="merch-section">
+    <section class="merch-section py-5" style="background-color: #000;">
         <div class="container">
-            <h2 class="latest-heading">Exclusive Merch</h2>
-            <div class="row align-items-center">
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch1.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
+            <h2 class="latest-heading text-white mb-5" data-aos="fade-up">
+                Premium Rubber Dies
+            </h2>
+            <div class="row g-4">
+                @php
+                    $dies = [
+                        ['img' => 'merch1.webp', 'title' => 'Compression Molding Dies', 'tag' => '', 'price' => '$57.00'],
+                        ['img' => 'merch2.webp', 'title' => 'Injection Molding Dies', 'tag' => 'New', 'price' => '$57.00'],
+                         ['img' => 'merch7.webp', 'title' => 'Custom Rubber Dies', 'tag' => '', 'price' => '$57.00'],
+                        ['img' => 'merch3.webp', 'title' => 'Extrusion Dies', 'tag' => '', 'price' => '$57.00'],
+                        ['img' => 'merch4.webp', 'title' => 'Transfer Molding Dies', 'tag' => 'Sale', 'price' => '$57.00'],
+                        ['img' => 'merch5.webp', 'title' => 'Hot Runner Rubber Dies', 'tag' => '', 'price' => '$57.00'],
+                        ['img' => 'merch6.webp', 'title' => 'Cold Runner Rubber Dies', 'tag' => 'Sale', 'price' => '$57.00'],
+                          ['img' => 'merch5.webp', 'title' => 'Hot Runner Rubber Dies', 'tag' => '', 'price' => '$57.00'],
+
+                    ];
+                @endphp
+
+                @foreach($dies as $die)
+                    <div class="col-md-3 col-sm-6" data-aos="fade-up">
+                        <div class="merch-wrap p-3 text-center rounded shadow-lg" style="background-color: #111; transition: 0.3s;">
+                            <figure class="mb-3">
+                                <img src="{{asset('assets/images/' . $die['img'])}}" class="img-fluid rounded" alt="{{ $die['title'] }}">
+                            </figure>
+                            <div class="merch-cntnt text-white">
+                                <h3 class="h5 fw-bold">{{ $die['title'] }}</h3>
+                                <p class="text-warning fw-semibold mb-1">{{ $die['price'] }}</p>
+                                @if($die['tag'])
+                                    <span class="badge bg-danger">{{ $die['tag'] }}</span>
+                                @endif
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch2.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                            <h5>New</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch3.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch4.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                            <h5>sale</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch5.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch6.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt marblk">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                            <h5>sale</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="merch-wrap">
-                        <figure>
-                            <img src="{{asset('assets/images/merch7.webp')}}" class="img-fluid" alt="">
-                        </figure>
-                        <div class="merch-cntnt">
-                            <h3>Hypnotic Album</h3>
-                            <p>$57.00</p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
 
 
-    <section class="videoplay">
-        <div class="container-fluid p-0">
-            <div class="row align-items-center">
-                <div class="col-md-12" data-aos="fade-up">
-                    <div class="videoplaybtn">
-                        <figure>
-                            <img src="{{asset('assets/images/videoplay.webp')}}" class="img-fluid" alt="">
-                            <a href="https://youtu.be/D0UnqGm_miA?si=b9Sy8xQDY5yvAyvM" data-fancybox=""><i
-                                    class="fas fa-play"></i></a>
-                        </figure>
-                        <a href="#" class="listen-box">
-                            <span><i class="far fa-arrow-up"></i></span>
-                            <p>West Palm Beach
-                                Offcial<br>
-                                Aftermovie 2024</p>
-                        </a>
-                    </div>
-                </div>
+    <section class="image-display">
+        <div style="position: relative; display: inline-block; width: 100%;">
+            <figure style="margin: 0;">
+                <img src="{{asset('assets/images/latest3.webp')}}"
+                     class="img-fluid"
+                     alt="Rubber Die Showcase"
+                     style="width: 100%; height: 350px; object-fit: cover;">
+            </figure>
+            <div style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 25px;
+            border-radius: 8px;
+        ">
+                <h2 style="margin: 0; font-size: 28px; font-weight: bold;">
+                    Premium Rubber Dies Showcase 2024
+                </h2>
             </div>
         </div>
     </section>
 
 
-    <section class="sign-up-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8" data-aos="fade-up">
-                    <div class="sign-cntnt">
-                        <h2>JOIN THE METAL MOVEMENT</h2>
-                        <form class="newsletterform">
-                            <input type="text" class="form-control" placeholder="Your email">
 
-                        </form>
-                        <a href="#" class="themeBtn">Sign Up<i class="far fa-arrow-up"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
 @endsection

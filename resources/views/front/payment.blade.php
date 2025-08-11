@@ -6,11 +6,13 @@
 
 
 
-
-    <section class="inner-banner dtlpg-baner">
-        <img src="{{asset('assets/images/innerbg2.jpg')}}" class="w-100" alt="img">
+    <section class="inner-banner">
+        <img src="{{asset('assets/images/latest1.webp')}}"
+             class="w-100"
+             alt="img"
+             style="height:300px; object-fit:cover; width:100%;">
         <div class="container">
-            <h2>PAYMENT</h2>
+            <h2>CHECKOUT</h2>
         </div>
     </section>
 
