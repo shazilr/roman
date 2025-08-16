@@ -113,7 +113,7 @@
 
                 <ul class="navftr" style="list-style:none; padding:0; margin-top:10px;">
                     <li style="display:inline-block; margin:0 15px;"><a href="tel:(330) 548-6928">(330) 548-6928</a></li>
-                    <li style="display:inline-block; margin:0 15px;"><a href="mailto:info@lordzofsteel.com">info@lordzofsteel.com</a></li>
+                    <li style="display:inline-block; margin:0 15px;"><a href="mailto:info@lordzofsteel.com"> iia@gmail.com</a></li>
                 </ul>
 
                 <ul class="ftrlinks" style="list-style:none; padding:0; margin-top:10px;">
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div class="copyRight" style="margin-top:20px; text-align:center;">
-            <p style="margin:0;">© 2024 lordzofsteel.com, All rights reserved</p>
+            <p style="margin:0;">© 2024 iia@gmail.com, All rights reserved</p>
             <ul style="list-style:none; padding:0; margin-top:5px;">
                 <li style="display:inline-block;"><a href="privacy.php">Privacy Policy</a></li>
             </ul>

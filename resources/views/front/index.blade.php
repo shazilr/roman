@@ -182,7 +182,7 @@
                             <div class="swiper-slide">
                                 <div class="video-content">
                                     <figure>
-                                        <img src="{{asset('assets/images/videoimg.webp')}}" class="img-fluid" alt="img">
+                                        <img src="{{asset('assets/images/latest3.webp')}}" class="img-fluid" alt="img">
                                         <a data-fancybox=""
                                            href="https://www.youtube.com/watch?v=cKjdTA91xPQ&amp;feature=youtu.be">
                                             <div><i class="fas fa-play"></i></div>
@@ -198,7 +198,7 @@
                             <div class="swiper-slide">
                                 <div class="video-content">
                                     <figure>
-                                        <img src="{{asset('assets/images/12.jpg')}}" class="img-fluid" alt="img">
+                                        <img src="{{asset('assets/images/innerbg1.jpg')}}" class="img-fluid" alt="img">
                                     </figure>
                                     <h2>Rubber Vulcanizing Press </h2>
                                     <ul>
@@ -210,7 +210,7 @@
                             <div class="swiper-slide">
                                 <div class="video-content">
                                     <figure>
-                                        <img src="{{asset('assets/images/www.jpg')}}" class="img-fluid" alt="img">
+                                        <img src="{{asset('assets/images/merch4.webp')}}" class="img-fluid" alt="img">
                                     </figure>
                                     <h2>CNC Milling Machine </h2>
                                     <ul>
@@ -276,7 +276,7 @@
                 </div>
                 <div class="col-md-3" data-aos="fade-up">
                     <div class="latest-card">
-                        <figure><img src="{{asset('assets/images/latest6.webp')}}" class="img-fluid" alt="img"></figure>
+                        <figure><img src="{{asset('assets/images/merch2.webp')}}" class="img-fluid" alt="img"></figure>
                         <h2>Embedded Sensors for Predictive Maintenance</h2>
 
                     </div>
@@ -389,7 +389,7 @@
                         ['img' => 'merch4.webp', 'title' => 'Transfer Molding Dies', 'tag' => 'Sale', 'price' => '$57.00'],
                         ['img' => 'merch5.webp', 'title' => 'Hot Runner Rubber Dies', 'tag' => '', 'price' => '$57.00'],
                         ['img' => 'merch6.webp', 'title' => 'Cold Runner Rubber Dies', 'tag' => 'Sale', 'price' => '$57.00'],
-                          ['img' => 'merch5.webp', 'title' => 'Hot Runner Rubber Dies', 'tag' => '', 'price' => '$57.00'],
+                          ['img' => 'artist3.webp', 'title' => 'Hot Runner Rubber Dies', 'tag' => '', 'price' => '$57.00'],
 
                     ];
                 @endphp

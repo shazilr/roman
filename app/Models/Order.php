@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,5 +16,7 @@ class Order extends Model
      'payment_status',
      'coupon_code',
      'coupon_discount',
+     'reference_id'
+
  ];
 }

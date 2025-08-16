@@ -34,6 +34,7 @@ class CreateOrdersTable extends Migration
             $table->string('city')->nullable();
             $table->string('zip_code')->nullable();
             $table->string('state')->nullable();
+
             $table->timestamps();
         });
     }

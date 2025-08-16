@@ -1,4 +1,4 @@
-@extends('admin.layout.app')
+ @extends('admin.layout.app')
 @section('content')
         <!-- Body: Body -->
         <div class="body d-flex py-3">

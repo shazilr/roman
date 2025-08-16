@@ -38,7 +38,7 @@ Route::get('/fan-club', [FanClubController::class, 'index'])->name('fan-club.fro
 Route::get('/gallery', [MediaController::class, 'index'])->name('media.front');
 Route::get('/product-detail', [MerchController::class, 'index'])->name('merch.front');
 Route::get('/product-detail/{id}', [MerchController::class, 'detail'])->name('merch.detail.front');
-Route::get('/shop', [MusicStoreController::class, 'index'])->name('music-store.front');
+    Route::get('/shop', [MusicStoreController::class, 'index'])->name('music-store.front');
 Route::get('/about', [TheBandController::class, 'index'])->name('the-band.front');
 Route::get('/cart', [CartController::class, 'index'])->name('cart.front');
 Route::post('/cart-add', [CartController::class, 'addToCart'])->name('cart.add');
@@ -47,13 +47,49 @@ Route::post('/cart-delete', [CartController::class, 'deleteCart'])->name('cart.d
 Route::get('/cart/count', function () {
     return count(session('cart'));
 })->name('cart.count');
-Route::get('/checkout', [CheckoutController::class, 'index'])->name('checkout.front');
-Route::post('/checkout/form', [CheckoutController::class, 'checkoutForm'])->name('checkout.form.front');
+
+
+// Checkout page show
+// Checkout page (GET)
+Route::get('/checkout', [CheckoutController::class, 'index'])->name('front.checkout');
+
+// Checkout form submit (POST)
+Route::post('/checkout', [CheckoutController::class, 'checkoutForm'])->name('checkout.form');
+
+
+// Thank you page after checkout
+
+
+
+
+// =====================
+// Payment Routes
+// =====================
+
+// Payment page
 Route::get('/payment', [PaymentController::class, 'index'])->name('payment.front');
+
+// Payment form submit
 Route::post('/payment/form', [PaymentController::class, 'paymentForm'])->name('payment.cart.form');
+
+// Stripe checkout success
 Route::get('/upgrade/checkout/{status}', [PaymentController::class, 'checkoutSuccess'])->name('checkout.success');
+
+// Stripe checkout cancel
 Route::get('/upgrade/cancel', [PaymentController::class, 'checkoutCancel'])->name('checkout.cancel');
+
+// Optional: Payment thank you page
 Route::get('/thankyou', [PaymentController::class, 'thankyou'])->name('thankyou');
+
+//Route::get('/payment', [PaymentController::class, 'index'])->name('payment.front');
+//
+//Route::get('/upgrade/checkout/{status}', [PaymentController::class, 'checkoutSuccess'])->name('checkout.success');
+//Route::get('/upgrade/cancel', [PaymentController::class, 'checkoutCancel'])->name('checkout.cancel');
+//Route::post('/payment/form', [PaymentController::class, 'paymentForm'])->name('payment.cart.form');
+
+
+
+
 
 
 

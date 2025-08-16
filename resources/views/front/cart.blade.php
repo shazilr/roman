@@ -34,85 +34,86 @@
 
     <!-- Begin: Step 2 -->
     <div class="checkOutStyle">
-        <div id="alert-message" class="alert-message" style="display: none;">Update successful!</div>
-
+        <!-- Single alert message (unique ID) -->
+        <div id="alert-message" class="alert-message text-center text-success" style="display: none;">
+            Update successful!
+        </div>
 
         <div class="container">
-            <div class="checkOutStyle">
-                <!-- Alert Message -->
-                <strong id="alert-message" style="display: none; color: green; text-align: center;"></strong>
+            @php
+                $cartItems = session('cart', []);
+            @endphp
 
-                <div class="container">
-                    @if(isset(\Illuminate\Support\Facades\Session::all()['cart']) && count(\Illuminate\Support\Facades\Session::all()['cart']) > 0)
-                        @foreach(\Illuminate\Support\Facades\Session::all()['cart'] as $cart)
-                            @php
-                                $product = \App\Models\Product::find($cart['product_id']);
-                            @endphp
-                            <div class="row cartItemCard" id="cart-item-{{ $cart['product_id'] }}">
-                                <div class="col-sm-2">
-                                    <img src="{{ asset('data/product_images/'.($product->image ?? '')) }}" alt="">
-                                </div>
-                                <div class="col-md-5 col-sm-4">
-                                    <h4>{{ $cart['name'] ?? '' }}</h4>
-                                </div>
-                                <div class="col-sm-2">
-                                    <strong class="price">
-                                        <span
-                                            id="quantityShown-{{ $cart['product_id'] }}">{{ $cart['quantity'] ?? '' }}</span>
-                                        × ${{ $cart['price'] ?? '' }}.00
-                                    </strong>
-                                </div>
-                                <div class="col-md-2 col-sm-3">
-                                    <div class="proCounter">
-                                        <span class="minus" data-id="{{ $cart['product_id'] }}">-</span>
-                                        <input type="text" id="quantity-{{ $cart['product_id'] }}"
-                                               value="{{ $cart['quantity'] }}" readonly/>
-                                        <span class="plus" data-id="{{ $cart['product_id'] }}">+</span>
-                                    </div>
-                                </div>
-                                <div class="col-sm-1">
-                                    <a href="#" class="delete" data-id="{{ $cart['product_id'] }}"><i
-                                            class="far fa-trash-alt"></i></a>
-                                </div>
-                            </div>
-                        @endforeach
-                    @else
-                        <div class="row emptyCartMessage">
-                            <div class="col-sm-12">
-                                <p>Your cart is currently empty.</p>
+            @if(count($cartItems) > 0)
+                @foreach($cartItems as $cart)
+                    @php
+                        $product = \App\Models\Product::find($cart['product_id']);
+                        $imagePath = $product && $product->image
+                            ? asset('data/product_images/'.$product->image)
+                            : asset('assets/images/default-product.png');
+                    @endphp
+
+                    <div class="row cartItemCard align-items-center mb-3" id="cart-item-{{ $cart['product_id'] }}">
+                        <div class="col-sm-2">
+                            <img src="{{ $imagePath }}" alt="{{ $cart['name'] ?? 'Product' }}" class="img-fluid">
+                        </div>
+                        <div class="col-md-5 col-sm-4">
+                            <h4>{{ $cart['name'] ?? '' }}</h4>
+                        </div>
+                        <div class="col-sm-2">
+                            <strong class="price">
+                                <span id="quantityShown-{{ $cart['product_id'] }}">{{ $cart['quantity'] ?? '' }}</span>
+                                × ${{ $cart['price'] ?? '' }}.00
+                            </strong>
+                        </div>
+                        <div class="col-md-2 col-sm-3">
+                            <div class="proCounter">
+                                <span class="minus" data-id="{{ $cart['product_id'] }}">-</span>
+                                <input type="text" id="quantity-{{ $cart['product_id'] }}"
+                                       value="{{ $cart['quantity'] }}" readonly/>
+                                <span class="plus" data-id="{{ $cart['product_id'] }}">+</span>
                             </div>
                         </div>
-                    @endif
+                        <div class="col-sm-1 text-end">
+                            <a href="#" class="delete text-danger" data-id="{{ $cart['product_id'] }}">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
+
+                <div class="row mt-4">
+                    <div class="col-lg-8 offset-lg-2">
+                        <a href="{{ route('front.checkout') }}" class="themeBtn border-0">
+                            Go to Checkout
+                        </a>
+
+
+
+
+                        <ul class="shipping-billing-col mt-3">
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i> Lorem Lipsum <a href="#" class="edit">edit</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone"></i> <a href="tel:1234567">1234567</a> <a href="#" class="edit">edit</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i> <a href="mailto:demo@gmail.com">demo@gmail.com</a> <a href="#" class="edit">edit</a></p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    @if(isset(\Illuminate\Support\Facades\Session::all()['cart']) && count(\Illuminate\Support\Facades\Session::all()['cart']) > 0)
-                        <a href="{{ route('checkout.front') }}" class="themeBtn border-0 btn-block">Proceed to
-                            Checkout</a>
-                    @endif
-
-                    <ul class="shipping-billing-col">
-                        <li>
-                            <p><i class="fas fa-map-marker-alt"></i> Lorem Lipsum <a href="" class="edit">edit</a></p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-phone"></i> <a href="tel:1234567">1234567</a> <a href="#"
-                                                                                                 class="edit">edit</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-envelope"></i><a
-                                    href="mailto:demo@gmail.com">demo@gmail.com</a><a href="#"
-                                                                                      class="edit">edit</a></p>
-                        </li>
-                    </ul>
+            @else
+                <div class="row emptyCartMessage text-center">
+                    <div class="col-sm-12">
+                        <p>Your cart is currently empty.</p>
+                    </div>
                 </div>
-            </div>
+            @endif
         </div>
     </div>
+
     <!-- END: Step 2 -->
 
 @endsection

@@ -48,22 +48,22 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="instaWrap">
-                        <img src="{{asset('assets/images/videoslider4.webp')}}" class="img-fluid" alt="">
+                        <img src="{{asset('assets/images/artist2.webp')}}" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="instaWrap">
-                        <img src="{{asset('assets/images/videoslider3.webp')}}" class="img-fluid" alt="">
+                        <img src="{{asset('assets/images/latest1.webp')}}" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="instaWrap">
-                        <img src="{{asset('assets/images/videoslider2.webp')}}" class="img-fluid" alt="">
+                        <img src="{{asset('assets/images/latest6.webp')}}" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="instaWrap">
-                        <img src="{{asset('assets/images/videoslider1.webp')}}" class="img-fluid" alt="">
+                        <img src="{{asset('assets/images/merch1.webp')}}" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
